@@ -31,10 +31,12 @@ public class practice {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Popular")));
 
-        if(driver.getCurrentUrl().equals("https://qamoviesapp.ccbp.tech/"))
+        if(driver.getCurrentUrl().equals("https://qamoviesapp.ccbp.tech/")) {
             System.out.println("url correct");
-        else
+            System.out.println("correct");
+        }else {
             System.out.println("url not correct");
-        driver.quit();
+        }
+            driver.quit();
     }
 }
